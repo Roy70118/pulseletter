@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_5=zr33y_#sla*&kw9*p!zz&wr$tt+nad(w#xomn(^&#6m#uwg
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+#ctrl f to search the word in files
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pulseletter',
 ]
 
 MIDDLEWARE = [
