@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User 
+from django.urls import reverse
 
 # Create your models here.
 class Category(models.Model):
@@ -13,6 +14,9 @@ class Category(models.Model):
     def __str__(self):
         # self is represented as model name(Category)
         return self.category_name 
+
+    def get_absolute_url(self):
+        return reverse('posts_by_category', kwargs={'category_id': self.pk})
 
 STATUS_CHOICES= (
     ("Draft","Draft"),
